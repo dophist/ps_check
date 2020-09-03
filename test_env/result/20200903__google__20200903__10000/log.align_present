@@ -1,0 +1,2 @@
+/Users/jerry/work/kaldi/src/bin/align-text ark,t:/Users/jerry/work/git/ps_check/test_env/result/20200903__google__20200903__10000/ref.txt ark,t:/Users/jerry/work/git/ps_check/test_env/result/20200903__google__20200903__10000/rec_present.txt ark,t:/Users/jerry/work/git/ps_check/test_env/result/20200903__google__20200903__10000/ALIGN_present 
+LOG (align-text[5.5.787~1-3953]:main():align-text.cc:135) Done 5 sentences, failed for 0

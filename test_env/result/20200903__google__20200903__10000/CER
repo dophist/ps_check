@@ -1,0 +1,4 @@
+/Users/jerry/work/kaldi/src/bin/compute-wer --mode=present --text=true ark,t:/Users/jerry/work/git/ps_check/test_env/result/20200903__google__20200903__10000/ref.txt ark,t:/Users/jerry/work/git/ps_check/test_env/result/20200903__google__20200903__10000/rec.txt 
+%WER 8.86 [ 7 / 79, 2 ins, 3 del, 2 sub ]
+%SER 80.00 [ 4 / 5 ]
+Scored 5 sentences, 0 not present in hyp.

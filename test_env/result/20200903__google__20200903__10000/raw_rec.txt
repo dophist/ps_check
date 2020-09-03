@@ -1,0 +1,5 @@
+1	this is a three it's sloppily written and rendered at an extremely low resolution of 28 by 28
+2	but your brain has no trouble recognizing it as a three and I want you to take a moment to
+3	it how crazy it is that brains can do this so
+4	Lee I mean this this and this are also recognizable is three
+5	even though the specific values of each pixel is very different from one image to the next

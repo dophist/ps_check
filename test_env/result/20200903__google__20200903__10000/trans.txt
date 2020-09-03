@@ -1,0 +1,5 @@
+1   This is a three. It's sloppily written and rendered at an extremely low resolution of 28 by 28 pixels.
+2   But your brain has no trouble recognizing it as a three and I want you to take a moment to appreciate
+3   How crazy it is that brains can do this so effortlessly?
+4   I mean this this and this are also recognizable as threes
+5   even though the specific values of each pixel is very different from one image to the next.
