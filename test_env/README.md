@@ -5,7 +5,7 @@
 * change working dir to your local setup in run.sh
 * go to service/google
     - sh install.sh
-* go to google speech cloud, activate google speech to text API, and download credential (a .json file)
+* go to google speech cloud, activate google speech to text API, and download credential (a .json file), rename and move the credential file to test_env/service/google/TIOBE.json
 * change text normalization to your own one, in test_env/utils/compute_cer.sh, don't change other resources' filename
 
 # usage:
