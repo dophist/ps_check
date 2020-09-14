@@ -9,12 +9,12 @@ dir=$1
 
 echo "-- <preparing reference"
 #replace folloing line with more sophisticated ENGLISH TN
-cat $dir/trans.txt | tr [a-z] [A-Z] | sed "s:\.::g" | sed "s:\,::g" > $dir/ref.txt
+cat $dir/trans.txt | $TEST_ENV/utils/tn.py > $dir/ref.txt
 echo "-- done>"
 
 echo "-- <preparing recognition text"
 #replace folloing line with more sophisticated ENGLISH TN
-cat $dir/raw_rec.txt | tr [a-z] [A-Z] | sed "s:\.::g" | sed "s:\,::g" > $dir/rec.txt
+cat $dir/raw_rec.txt | $TEST_ENV/utils/tn.py > $dir/rec.txt
 grep -v $'\t$' $dir/rec.txt > $dir/rec_present.txt # filter away empty recognition result
 echo "-- done>"
 
