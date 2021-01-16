@@ -34,8 +34,6 @@ Cloud Speech-to-Text API documentation entry can be found here:
 #   usage: python3 samples/v1/speech_transcribe_sync.py [--local_file_path "resources/brooklyn_bridge.raw"]
 
 from google.cloud import speech
-from google.cloud.speech import enums
-from google.cloud.speech import types
 
 import io, sys
 import codecs
@@ -49,15 +47,15 @@ def transcribe_file(client, file_name):
     # Loads the audio into memory
     with io.open(file_name, 'rb') as f:
         content = f.read()
-        audio = types.RecognitionAudio(content=content)
+        audio = speech.RecognitionAudio(content=content)
 
-    config = types.RecognitionConfig(
-        encoding=enums.RecognitionConfig.AudioEncoding.LINEAR16,
+    config = speech.RecognitionConfig(
+        encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
         sample_rate_hertz=16000,
         language_code="en-US",
         model="video")
 
-    response = client.recognize(config, audio)
+    response = client.recognize(config=config, audio=audio)
     rec_text = ''
 
     for result in response.results:
